@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEnterAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:hint="Amount"
+        android:text="Please enter amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWebCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web checkout"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpiPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPI Payment"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btbNetBankingPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Net Banking"/>
+
+</LinearLayout>
+
+
